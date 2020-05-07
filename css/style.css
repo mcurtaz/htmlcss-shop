@@ -18,6 +18,11 @@
   position: relative;
 }
 
+.item > img{
+  width: 100%;
+}
+
+/* sezione sconto */
 .sconto{
   font-family: sans-serif;
   font-size: 15px;
@@ -35,10 +40,22 @@
   background-color: green;
 }
 
-.item > img{
-  width: 100%;
+.small{
+  background-color: red;
 }
 
-.item div:last-child{
-  text-align: center;
+/* sezione cuoricino */
+
+.heart{
+  display: none;
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+/* posizionamento attaccato al bordo sotto e centrato */
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 0.5em)
+}
+.item:hover .heart{
+  display: block;
 }
