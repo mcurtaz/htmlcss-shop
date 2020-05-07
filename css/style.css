@@ -3,10 +3,55 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: rgb(204, 230, 255);
+}
+
+/* sezione intestazione con position fixed */
+
+header{
+  border-bottom: 2px solid black;
+  background-color: rgb(102, 140, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+header img{
+  height: 60px;
+}
+
+/* posizionamento e stile barra di ricerca e button */
+header input[type="text"]{
+  height: 25px;
+  width: 300px;
+  font-size: 20px;
+  font-family: sans-serif;
+  position: relative;
+  left: 50px;
+  bottom: 10px;
+}
+
+header input[type="button"]{
+  height: 25px;
+  width: 80px;
+  border-radius: 2px;
+  margin-left: 10px;
+  position: relative;
+  left: 50px;
+  bottom: 12px;
+}
+
+/* sezione con i prodotti */
 
 .row{
   width: 80%;
   margin: 10px auto 0px;
+}
+
+.row:first-of-type{
+  margin-top: 80px;
 }
 
 .item{
