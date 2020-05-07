@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row{
+  width: 80%;
+  margin: 10px auto 0px;
+}
+
+.item{
+  /* larghezza data in percentuale per farne stare 3 su una riga */
+  width: 32%;
+
+  display: inline-block;
+  border: 1px solid black;
+  position: relative;
+}
+
+.sconto{
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 3px;
+  /* posizionamento sconto nell'angolo */
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+/* colorazione diversa in base allo sconto */
+
+.big{
+  background-color: green;
+}
+
+.item > img{
+  width: 100%;
+}
+
+.item div:last-child{
+  text-align: center;
+}
